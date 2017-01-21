@@ -82,9 +82,9 @@ The OpenSSL 1.1.0 installer needs PERL 5.10 or later.
 
     $ perl -v
 
-The []installation instructions](https://wiki.openssl.org/index.php/Compilation_and_Installation) on the openSSL site are a little confusing, but the process is very simple. In the INSTALL file in the openssl-1.1.0c directory we find the proper installation instructions for Unix.
+The [installation instructions](https://wiki.openssl.org/index.php/Compilation_and_Installation) on the openSSL site are a little confusing, but the process is very simple. In the INSTALL file in the openssl-1.1.0c directory we find the proper installation instructions for Unix.
 
-By default openssl will be installed in /usr/local. Check that there is no 'ssl' directory in '/usr/local'. To change the default, see the INSTALL document.
+By default openssl will be installed in /usr/local. Check that there is no 'ssl' directory in '/usr/local'. To change the default, see the INSTALL document (but note that COpenSsl needs the default location)
 
 First run config:
 
@@ -117,6 +117,4 @@ Again a lot of messages scrolls over the screen. (Note that this step takes by f
 
 Since this is for API use only there is no need to adjust PATH variables or anything.
 
-The header files can be found in _openssl-1.1.0c/include/openssl_ copy these to the _openssl/include/openssl_ path in the SecureSockets directory. The libcrypto.a and libssl.a are in _openssl-1.1.0c_ and should be copied over to the _openssl/lib_ path in the SecureSockets directory.
-
-Do not throw away the old headers and lib just yet, wait until a build of SecureSockets is successful. If such a build fails with a future version of openSSL, please let me know at rien@balancingrock.nl
+Problems, suggestions or requests? please let me know at rien@balancingrock.nl
