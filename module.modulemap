@@ -4,7 +4,6 @@ module COpenSsl [system] {
   header "/usr/local/include/openssl/crypto.h"
   header "/usr/local/include/openssl/evp.h"
   header "/usr/local/include/openssl/x509v3.h"
-  export *
   link "ssl"
   link "crypto"
 }
