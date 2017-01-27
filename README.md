@@ -63,6 +63,10 @@ Note: Planned releases are for information only, they are subject to change with
 
 - The current verion will be upgraded to 1.0.0 status when the full set necessary for Swiftfire 1.0.0 has been completed.
 
-####v0.1.0 (Current)
+####v0.2.0 (Current)
+
+- Added xcode project for dummy framework.
+
+####v0.1.0
 
 - Initial release
