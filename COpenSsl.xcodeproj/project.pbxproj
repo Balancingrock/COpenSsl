@@ -87,6 +87,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_16 = {
+						LastSwiftMigration = 0930;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "COpenSsl" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -134,6 +139,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COpenSsl;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = COpenSsl;
 			};
 			name = Debug;
@@ -155,6 +162,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COpenSsl;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = COpenSsl;
 			};
 			name = Release;
