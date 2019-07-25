@@ -49,12 +49,13 @@ Alternative: Use pkgConfig
 
 - using pkgConfig make sure you are using the correct version of the openSSL libraries and headers: `$ pkg-config --libs openssl`
 - in the file `Package.swift` add the line `pkgConfig: "openssl"` so that the package manifest reads like:
-    
-    let package = Package(
-        name: "COpenSsl",
-        pkgConfig: "openssl"
-    )
-    
+
+~~~    
+let package = Package(
+    name: "COpenSsl",
+    pkgConfig: "openssl"
+)
+~~~    
 (beware the comma after the name spec)
 
 ## Xcode
