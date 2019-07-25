@@ -1,9 +1,10 @@
 module COpenSsl [system] {
-  header "/usr/local/include/openssl/ssl.h"
-  header "/usr/local/include/openssl/err.h"
-  header "/usr/local/include/openssl/crypto.h"
-  header "/usr/local/include/openssl/evp.h"
-  header "/usr/local/include/openssl/x509v3.h"
-  link "ssl"
-  link "crypto"
+    header "../openssl/include/openssl/ssl.h"
+    header "../openssl/include/openssl/err.h"
+    header "../openssl/include/openssl/crypto.h"
+    header "../openssl/include/openssl/evp.h"
+    header "../openssl/include/openssl/x509v3.h"
+    link "ssl"
+    link "crypto"
+    export *
 }
