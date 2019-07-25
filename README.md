@@ -39,14 +39,16 @@ Keep in mind that openSSL must be installed for this wrapper to become usefull.
 ## SPM
 
 To use this package as is:
-    - the openSSL libraries and include files must be installed as described in the section "Install".
-    - the executable must be instructed where to find the libraries: `$ swift build -Xlinker -L/../openssl/lib` (assuming the executable project is also parallel to the openSSL and COpenSSL projects)
+
+- the openSSL libraries and include files must be installed as described in the section "Install".
+- the executable must be instructed where to find the libraries: `$ swift build -Xlinker -L/../openssl/lib` (assuming the executable project is also parallel to the openSSL and COpenSSL projects)
 
 If another location for openSSL is used, clone the project and link the cloned project. Make sure to update the `module.modulemap` to refer to the proper location for openSSL. Since this is a specific copy for your use only, you can also specify the complete filepath.
 
 Alternative: Use pkgConfig
-    - using pkgConfig make sure you are using the correct version of the openSSL libraries and headers: `$ pkg-config --libs openssl`
-    - in the file `Package.swift` add the line `pkgConfig: "openssl"` so that the package manifest reads like:
+
+- using pkgConfig make sure you are using the correct version of the openSSL libraries and headers: `$ pkg-config --libs openssl`
+- in the file `Package.swift` add the line `pkgConfig: "openssl"` so that the package manifest reads like:
     
     let package = Package(
         name: "COpenSsl",
